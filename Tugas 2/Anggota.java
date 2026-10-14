@@ -27,8 +27,7 @@ public class Anggota {
     public int getJumlahPinjaman() {
         return jumlahPinjaman;
     }
-
-
+    
     public void pinjam(int nominal) {
         if (jumlahPinjaman + nominal > limitPinjaman) {
             System.out.println("Maaf, jumlah pinjaman melebihi limit.");
@@ -36,7 +35,7 @@ public class Anggota {
             jumlahPinjaman += nominal;
         }
     }
-
+    
     public void angsur(int nominal) {
         double minimalAngsuran = jumlahPinjaman * 0.1;
 
